@@ -20,7 +20,7 @@ public class CharacterEncodingFilter extends AbstractFilter {
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
 		LogManager.getLogger().debug("使用校验用户登录过滤器,进行权限控制,我在乱码处理器里...");
-
+		System.out.println("过滤器");
 	}
 		
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
